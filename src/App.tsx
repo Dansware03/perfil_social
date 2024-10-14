@@ -17,11 +17,11 @@ function App() {
   const [profileData, setProfileData] = useState<ProfileData>({
     name: 'Angela Vivas',
     description: 'Llevo más de 10 años practicando rugby, lo que me ha permitido participar en festivales y torneos importantes, representando a mi región y a mi país. Gracias al rugby, he vivido experiencias inolvidables, como viajar y compartir con personas de diferentes lugares. He llegado muy lejos gracias a mi dedicación y disciplina desde el momento en que comencé.',
-    profilePicture: './src/img/perfil.jpg',
+    profilePicture: 'https://raw.githubusercontent.com/Dansware03/perfil_social/main/src/img/perfil.jpg',
     photos: [
-      { id: 1, url: './src/img/album(1).jpg' },
-      { id: 2, url: './src/img/album(2).jpg' },
-      { id: 3, url: './src/img/album(3).jpg' },
+      { id: 1, url: 'https://raw.githubusercontent.com/Dansware03/perfil_social/main/src/img/album(1).jpg' },
+      { id: 2, url: 'https://raw.githubusercontent.com/Dansware03/perfil_social/main/src/img/album(2).jpg' },
+      { id: 3, url: 'https://raw.githubusercontent.com/Dansware03/perfil_social/main/src/img/album(3).jpg' },
     ],
   });
 
