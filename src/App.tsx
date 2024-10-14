@@ -94,7 +94,7 @@ function App() {
           {/* Redes Sociales */}
           <div className="mt-6 flex justify-center space-x-4">
             <a
-              href="https://www.instagram.com/tu_perfil"
+              href="https://www.instagram.com/angelayelitzavivas"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-colors"
@@ -103,7 +103,7 @@ function App() {
               Instagram
             </a>
             <a
-              href="https://www.facebook.com/tu_perfil"
+              href="https://www.facebook.com/angela.vivas.58323"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
@@ -120,7 +120,7 @@ function App() {
                 onClick={saveProfileData}
               >
                 <Save className="w-5 h-5 mr-2" />
-                Save Changes
+                Guardar Cambios
               </button>
             ) : (
               <button
@@ -128,13 +128,13 @@ function App() {
                 onClick={() => setIsEditing(true)}
               >
                 <User className="w-5 h-5 mr-2" />
-                Edit Profile
+                Editar Perfil
               </button>
             )}
           </div>
         </div>
         <div className="border-t border-gray-200 px-6 py-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Photo Album</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Album Fotografico</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {profileData.photos.map((photo) => (
               <div key={photo.id} className="relative aspect-w-1 aspect-h-1">
