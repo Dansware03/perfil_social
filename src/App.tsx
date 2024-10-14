@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { User, Image, Camera, Save } from 'lucide-react';
+import { User, Image, Camera, Save, Instagram, Facebook } from 'lucide-react';
 
 interface Photo {
   id: number;
@@ -90,6 +90,29 @@ function App() {
           ) : (
             <p className="mt-2 text-gray-600">{profileData.description}</p>
           )}
+
+          {/* Redes Sociales */}
+          <div className="mt-6 flex justify-center space-x-4">
+            <a
+              href="https://www.instagram.com/tu_perfil"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-colors"
+            >
+              <Instagram className="w-5 h-5 mr-2" />
+              Instagram
+            </a>
+            <a
+              href="https://www.facebook.com/tu_perfil"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+            >
+              <Facebook className="w-5 h-5 mr-2" />
+              Facebook
+            </a>
+          </div>
+
           <div className="mt-6 flex justify-center space-x-4">
             {isEditing ? (
               <button
@@ -105,7 +128,7 @@ function App() {
                 onClick={() => setIsEditing(true)}
               >
                 <User className="w-5 h-5 mr-2" />
-                Editar Perfil
+                Edit Profile
               </button>
             )}
           </div>
